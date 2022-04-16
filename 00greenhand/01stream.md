@@ -8,13 +8,13 @@
 ## 1.背景介绍
 stream基础向，如果已经很熟了就忽略这篇文章，可以看[stream进阶使用](https://github.com/edanlx/SealBook/blob/master/01graceCode/11stream.md)
 ## 2.基础概念及基础原理介绍
-操作分类
-        中间操作(有状态的需要临时迭代再进行下一步，无状态不需要)
-            无状态(整体链表结构保证其只循环一次)：unordered()、filter()、 map()、 mapToInt() 、mapToLong() 、mapToDouble()、 flatMap() 、flatMapToInt()、 flatMapToLong()、 flatMapToDouble()、 peek()
-            有状态：distinct()、 sorted() 、sorted()、 limit()、 skip()
-        结束操作
-            非短路操作(循环全部)：forEach() 、forEachOrdered() 、toArray()、 reduce()、 collect()、 max() 、min() 、count()
-            短路操作(匹配到直接结束流)：anyMatch() 、allMatch() 、noneMatch()、findFirst()、findAny()
+1. 操作分类
+1.1 中间操作(有状态的需要临时迭代再进行下一步，无状态不需要)
+1.1.1无状态(整体链表结构保证其只循环一次)：unordered()、filter()、 map()、 mapToInt() 、mapToLong() 、mapToDouble()、 flatMap() 、flatMapToInt()、 flatMapToLong()、 flatMapToDouble()、 peek()
+1.1.2 有状态：distinct()、 sorted() 、sorted()、 limit()、 skip()
+1.2 结束操作
+1.2.1 非短路操作(循环全部)：forEach() 、forEachOrdered() 、toArray()、 reduce()、 collect()、 max() 、min() 、count()
+1.2.2 短路操作(匹配到直接结束流)：anyMatch() 、allMatch() 、noneMatch()、findFirst()、findAny()
 
 ## 3.拉姆达表达式和匿名内部类
 以相对熟悉的runnable接口为例
